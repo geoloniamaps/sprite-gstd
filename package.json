@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sprite-one -i./icons -r1 -r2 ./_site/sprite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build && npx http-server -c-1 ./_site"
   },
   "keywords": [],
   "author": "",

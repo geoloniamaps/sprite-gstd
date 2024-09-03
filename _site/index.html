@@ -11,7 +11,18 @@
     </style>
   </head>
   <body>
-    <main id="app"></main>
+    <main class="container">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Geolonia 標準アイコンセット
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Geolonia の地図で私用するための標準アイコンセットです。
+          </p>
+        </div>
+      </div>
+      <div id="icon-table"></div>
+    </main>
     <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
     <script type="module">
@@ -63,24 +74,7 @@
           </ul>
         `;
       };
-      const App = () => {
-        return html`
-          <div class="container">
-            <div class="px-4 py-5 my-5 text-center">
-              <h1 class="display-5 fw-bold text-body-emphasis">Geolonia 標準アイコンセット</h1>
-              <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">
-                  Geolonia の地図で私用するための標準アイコンセットです。
-                </p>
-              </div>
-            </div>
-            <div class="">
-              <${IconTable} />
-            </div>
-          </div>
-        `;
-      }
-      ReactDOM.render(html`<${App} />`, document.getElementById('app'));
+      ReactDOM.render(html`<${IconTable} />`, document.getElementById('icon-table'));
     </script>
   </body>
 </html>
